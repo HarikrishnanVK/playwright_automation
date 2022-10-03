@@ -1,0 +1,57 @@
+{
+    "TestData":[{
+    "BupaServiceSite": "sitemap",
+    "ServicePageTitle": "Sitemap",
+    "LinkTitle": "Our markets",
+    "LinkName": "Our strategy",
+    "LinkName2": "Our markets",
+    "LinkName3": "Our Approach to Sustainability",
+    "LinkName4": "Stories and insights"
+},
+{
+    "BupaServiceSite": "accessibility",
+    "ServicePageTitle": "Accessibility",
+    "LinkTitle": "Private Health Insurance, Medical providers",
+    "LinkName": "Culture and values",
+    "LinkName2": "Health insurance",
+    "LinkName3": "Environment and climate action",
+    "LinkName4": "Press releases"
+},
+{
+    "BupaServiceSite": "cookie-policy",
+    "ServicePageTitle": "Cookie policy",
+    "LinkTitle": "Health services, Dental Centers, Health Clinics",
+    "LinkName": "Inclusion and diversity",
+    "LinkName2": "Healthcare services",
+    "LinkName3": "eco-Disruptive",
+    "LinkName4": "Regulatory news"
+},
+{
+    "BupaServiceSite": "privacy-policy",
+    "ServicePageTitle": "Privacy policy",
+    "LinkTitle": "Care and support for the elderly",
+    "LinkName": "Leadership",
+    "LinkName2": "Aged care",
+    "LinkName3": "Contributing to communities",
+    "LinkName4": "Media library"
+},
+{
+    "BupaServiceSite": "modern-slavery-statement",
+    "ServicePageTitle": "Modern slavery statement",
+    "LinkTitle": "Private Health Insurance, Medical providers",
+    "LinkName": "Governance",
+    "LinkName2": "Health insurance",
+    "LinkName3": "Partnerships with Paralympic teams",
+    "LinkName4": "Stories and insights"
+},
+{
+    "BupaServiceSite": "scam-warning",
+    "ServicePageTitle": "Scam warning",
+    "LinkTitle": "Care and support for the elderly",
+    "LinkName": "Our strategy",
+    "LinkName2": "Aged care",
+    "LinkName3": "Responsible business conduct",
+    "LinkName4": "Press releases"
+    }],
+    "BrowserOption": "chromium"
+}
