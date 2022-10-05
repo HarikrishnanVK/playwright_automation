@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-    stage('install playeright') {
+    stage('install playwright') {
       steps {
         sh '''
   npm i -D @playwright/test
