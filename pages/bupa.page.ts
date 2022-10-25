@@ -3,8 +3,8 @@ import { BrowserContext, expect, Locator, Page } from '@playwright/test';
 export class BupaPage {
 
     private globalVariable;
-    readonly page: Page;
-    readonly context: BrowserContext;
+    private readonly page: Page;
+    private readonly context: BrowserContext;
 
     constructor(page: Page, context: BrowserContext) {
         this.page = page;

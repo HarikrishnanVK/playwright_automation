@@ -1,5 +1,5 @@
 {
-  "name": "PlaywrightSampleTests",
+  "name": "playwright_sample_tests",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@playwright/test": "^1.26.1",
-    "playwright": "^1.25.1"
+    "@playwright/test": "^1.26.1"
   }
 }
