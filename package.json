@@ -7,13 +7,27 @@
     "bupa": "https://www.bupa.com/"
   },
   "scripts": {
-    "test": "npx playwright test",
+    "test": "npx playwright test --project=APIConfig & npx playwright show-report",
+    "etest": "npx playwright test --project=Chrome_Prod -g \"sample test\"",
+    "test2": "npx playwright test -g \"Window handles\"",
+    "TestGeneratorPixel": "npx playwright codegen https://google.com --device= \"Pixel 5\"",
     "testRecorder": "npx playwright codegen playwright.dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "krishnan <hari.krishnan>",
   "license": "ISC",
   "dependencies": {
-    "@playwright/test": "^1.26.1"
+    "@playwright/test": "^1.26.1",
+    "dotenv": "^16.0.3"
+  },
+  "repository": "https://github.com/HarikrishnanVK/playwright_automation.git",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.5"
   }
 }

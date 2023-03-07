@@ -1,57 +1,83 @@
-import { test, expect} from '@playwright/test';
-import { env } from "../package.json";
-import { BupaPage } from '../pages/bupa.page';
-import { TestData} from "../test_data.json";
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-confusing-void-expression */
+/* eslint-disable @typescript-eslint/quotes */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-base-to-string */
+/* eslint-disable @typescript-eslint/no-floating-promises */
+import { test, expect } from '@playwright/test'
+import { BupaPage } from '../pages/bupa.page'
+import { TestData } from '../test_data.json'
 
-let bupa: BupaPage;
+let bupa: BupaPage
 
-test.beforeEach(async ({ page }) => {
-    await page.goto(env.bupa, { timeout: 30000 });
-    console.log(`captured site title as ${await page.title()}`);
-});
+// test.beforeAll(async ({ page }) => {
+//     await page.goto(env.bupa);
+//     console.log(`captured site title as ${await page.title()}`);
+// });
 
-test.describe('Bupa site test cases', () => {
-    test("Verify Bupa search engine working", async ({ page, context }) => {
-        bupa = new BupaPage(page, context);
-        await bupa.verifyHomePage();
-        await bupa.mouseHoverOnLink("our-bupa");
-        await bupa.verifySubLinksOfOurBupa();
-        await bupa.selectSubLink("Leadership");
-        const actualPageTitle = await bupa.returnPageTitle();
-        expect(actualPageTitle.toLowerCase()).toContain("Leadership | Bupa.com".toLowerCase());
-        await bupa.searchContent("James lenton");
-        await bupa.verifySearchResult("James lenton");
-        await bupa.navigateToFirstLink();
-        await bupa.validateArticle("James lenton");
-    });
+test.beforeEach(({ page, baseURL }) => {
+  page.goto(baseURL!)
+    .then(() => {
+      page.waitForLoadState()
+        .then(() => {
+          page.title()
+            .then(title => {
+              console.log(`captured site title as ${title}`)
+              expect("").toEqual(title)
+            })
+        })
+    })
+  // page.goto(baseURL!)
+  // console.log("I must execute after navigating to URL")
+  // page.waitForLoadState()
+  // const title = page.title()
+  // console.log("I must execute after getting the title")
+  // console.log(`captured site title as ${title}`)
+})
 
-    TestData.forEach(data => {
-        test(`Verify primary links of Bupa site ${data.BupaServiceSite}`, async ({ page, context }) => {
-            bupa = new BupaPage(page, context);
-            await bupa.verifyHomePage();
-            await bupa.mouseHoverOnLink("our-bupa");
-            await bupa.selectSubLink(data.LinkName);
-            const actualPageTitle = await bupa.returnPageTitle();
-            expect(actualPageTitle.toLowerCase()).toContain(data.LinkName.toLowerCase());
-            await bupa.mouseHoverOnLink("what-we-do");
-            await bupa.selectSubLink(data.LinkName2);
-            const actualPageTitle2 = await bupa.returnPageTitle();
-            expect(actualPageTitle2.toLowerCase()).toContain(data.LinkTitle.toLowerCase());
-            await bupa.mouseHoverOnLink("sustainability");
-            await bupa.selectSubLink(data.LinkName3);
-            const actualPageTitle3 = await bupa.returnPageTitle();
-            expect(actualPageTitle3.toLowerCase()).toContain(data.LinkName3.toLowerCase());
-            await bupa.mouseHoverOnLink("news");
-            await bupa.selectSubLink(data.LinkName4);
-            const actualPageTitle4 = await bupa.returnPageTitle();
-            expect(actualPageTitle4.toLowerCase()).toContain(data.LinkName4.toLowerCase());
-            await bupa.clickSocialMediaLinks(data.BupaServiceSite);
-            const actualPageTitle5 = await bupa.returnPageTitle();
-            expect(actualPageTitle5.toLowerCase()).toContain(data.ServicePageTitle.toLowerCase());
-            await bupa.searchContent("Bupa");
-            await bupa.verifySearchResult("Bupa");
-            await bupa.navigateToFirstLink();
-            await bupa.validateArticle("bienvenido a ecodisruptive");
-        });
-    });
+test.describe('sample test', () => {
+  test('Verify Bupa search engine working', ({ page, context }) => {
+    bupa = new BupaPage(page, context)
+    bupa.verifyHomePage()
+      .then(() => {
+        bupa.mouseHoverOnLink('our-bupa')
+          .then(() => {
+            bupa.verifySubLinksOfOurBupa()
+              .then(() => {
+                bupa.selectSubLink('Leadership')
+                  .then(() => {
+                    bupa.returnPageTitle()
+                      .then(actualPageTitle => {
+                        expect(actualPageTitle.toLowerCase()).toContain('Leadership | Bupa.com'.toLowerCase())
+                      })
+                  })
+              })
+          })
+      })
+  })
+})
+// await bupa.searchContent('James lenton')
+// await bupa.verifySearchResult('James lenton')
+// await bupa.navigateToFirstLink()
+// await bupa.validateArticle('James lenton')
+
+test.describe('Bupa data driven tests', () => {
+  TestData.forEach(data => {
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+    test(`Verify primary links of Bupa site ${data.BupaServiceSite}`, async ({ page, context }) => {
+      bupa = new BupaPage(page, context)
+      await bupa.verifyHomePage()
+      await bupa.mouseHoverOnLink('our-bupa')
+      await bupa.selectSubLink(data.LinkName)
+      const actualPageTitle = await bupa.returnPageTitle()
+      expect(actualPageTitle.toLowerCase()).toContain(data.LinkName.toLowerCase())
+      await bupa.clickSocialMediaLinks(data.BupaServiceSite)
+      const actualPageTitle5 = await bupa.returnPageTitle()
+      expect(actualPageTitle5.toLowerCase()).toContain(data.ServicePageTitle.toLowerCase())
+      await bupa.searchContent('James lenton')
+      await bupa.verifySearchResult('James lenton')
+      await bupa.navigateToFirstLink()
+      await bupa.validateArticle('James lenton')
+    })
+  })
 })

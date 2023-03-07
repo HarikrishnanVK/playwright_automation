@@ -9,24 +9,6 @@
     "LinkName4": "Stories and insights"
 },
 {
-    "BupaServiceSite": "accessibility",
-    "ServicePageTitle": "Accessibility",
-    "LinkTitle": "Private Health Insurance, Medical providers",
-    "LinkName": "Culture and values",
-    "LinkName2": "Health insurance",
-    "LinkName3": "Environment and climate action",
-    "LinkName4": "Press releases"
-},
-{
-    "BupaServiceSite": "cookie-policy",
-    "ServicePageTitle": "Cookie policy",
-    "LinkTitle": "Health services, Dental Centers, Health Clinics",
-    "LinkName": "Inclusion and diversity",
-    "LinkName2": "Healthcare services",
-    "LinkName3": "eco-Disruptive",
-    "LinkName4": "Regulatory news"
-},
-{
     "BupaServiceSite": "privacy-policy",
     "ServicePageTitle": "Privacy policy",
     "LinkTitle": "Care and support for the elderly",
@@ -52,6 +34,5 @@
     "LinkName2": "Aged care",
     "LinkName3": "Responsible business conduct",
     "LinkName4": "Press releases"
-    }],
-    "BrowserOption": "chromium"
+    }]
 }

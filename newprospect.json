@@ -1,0 +1,65 @@
+{
+    "PolicyDetailsInputs":
+    {
+        "NewProspect":
+        {
+            "TestValues":
+            [
+                {
+                "ElementType": "Input",
+                "DefaultValue": "Test Input",
+                "Ignore": 
+                [
+                    "representatives.producers",
+                    "representatives.accountManagers",
+                    "representatives.newBusinessCoordinators"
+                ],
+                "InputValues":
+                    [
+                        {
+                        "ID": "title",
+                        "Value": "Test"
+                        },
+                        {
+                        "ID": "shared_primaryContactPhysicalStreet",
+                        "Value": "123 Fake Street"
+                        },
+                        {
+                        "ID": "shared_primaryContactPhysicalCity",
+                        "Value": "San Diego"
+                        },
+                        {
+                        "ID": "shared_primaryContactPhysicalZip",
+                        "Value": "92101"
+                        },                        
+                        {
+                        "ID": "shared_effectiveDate",
+                        "Value": "11112030"
+                        },
+                        {
+                        "ID": "shared_clearanceCurrentTiv",
+                        "Value": "100"
+                        }
+                    ]
+                },
+                {            
+                "ElementType": "Select",
+                "DefaultValue": 0,
+                "InputValues":
+                    [
+                        {
+                        "ID": "shared_primaryContactPhysicalState",
+                        "SelectValue": 6
+                        },
+                        {
+                        "ID": "renewalYear",
+                        "SelectValue": "PEPIP 2022 - 2023"
+                        }
+                    ]
+                       
+                }
+            ]       
+        }
+    }
+}
+        
