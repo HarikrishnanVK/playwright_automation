@@ -10,16 +10,40 @@ import { type PlaywrightTestConfig, devices } from '@playwright/test'
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: './tests/',
-  testMatch: 'bupa.spec.ts',
+  // testDir: './tests/parallel_tests',
+  //testMatch: 'bupa_healthcare.spec.ts',
+  testDir: './tests/parallel_tests',
+  testMatch: 'webtests.spec.ts',
   /* Maximum time one test can run for. */
-  timeout: 60 * 1000,
+  timeout: 120 * 1000,
   expect: {
-    timeout: 60000
+    timeout: 5000
   },
-  fullyParallel: false,
-  workers: 1,
-  reporter: 'html',
+  fullyParallel: true,
+  workers: 3,
+  reporter: [['list'],
+  [
+    'html',
+    {
+      outputFolder: './reports/html-reports',
+      open: 'never' 
+    }],
+  [
+    'json',
+    {
+      outputFile: './reports/playwright_results.json',
+      stripANSIControlSequences: true
+    }
+  ],
+  [
+    'allure-playwright',
+    {
+      detail: true,
+      outputFolder: "./allure-results",
+      suiteTitle: false,
+    },
+  ]
+  ],
   use: {
     actionTimeout: 60000
   },
@@ -29,64 +53,69 @@ const config: PlaywrightTestConfig = {
 
   projects: [
     {
-      name: 'Chrome_Staging',
+      name: 'Smoke Tests',
+      // testMatch: 'parallel1.spec.ts',
       use: {
         headless: false,
-        channel: 'Chrome',
         screenshot: 'only-on-failure',
+        // trace: 'retain-on-failure',
         baseURL: 'https://www.bupa.com/',
         video: 'retain-on-failure',
-        launchOptions: {
-          executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
-        }
-      }
+        // viewport: {width: 1920, height: 1080}
+      },
     },
 
-    {
-      name: 'Chrome_Prod',
-      use: {
-        headless: false,
-        channel: 'Chrome',
-        screenshot: 'only-on-failure',
-        baseURL: 'https://bupa.com',
-        video: 'retain-on-failure',
-        launchOptions: {
-          executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
-        }
-      }
-    },
+    // {
+    //   name: 'Samsung_Galaxy',
+    //   // testMatch: 'parallel2.spec.ts',
+    //   use: {
+    //   ...devices['iPad Mini'],
+    //     headless: false,
+    //     screenshot: 'only-on-failure',
+    //     baseURL: 'https://www.bupa.com/',
+    //   }
+    // },
 
-    {
-      name: 'edge',
-      use: {
-        headless: false,
-        channel: 'msedge'
-      }
-    },
+    // {
+    //   name: 'iPhone_12',
+    //   // testMatch: 'parallel3.spec.ts',
+    //   use: {
+    //     ...devices['iPhone 12 Mini landscape'],
+    //     headless: false,
+    //     screenshot: 'only-on-failure',
+    //     baseURL: 'https://www.bupa.com/',
+    //   }
+    // }
 
-    {
-      name: 'firefox',
-      use: {
-        headless: false,
-        browserName: 'firefox'
-      }
-    },
+    // {
+    //   name: 'Chrome_Prod',
+    //   use: {
+    //     headless: false,
+    //     channel: 'Chrome',
+    //     screenshot: 'only-on-failure',
+    //     baseURL: 'https://bupa.com',
+    //     video: 'retain-on-failure',
+    //     launchOptions: {
+    //       executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+    //     }
+    //   }
+    // },
 
-    {
-      name: 'APIConfig',
-      testMatch: 'api.spec.ts',
-      use: {
-        baseURL: 'https://simple-books-api.glitch.me'
-      }
-    },
+    // {
+    //   name: 'edge',
+    //   use: {
+    //     headless: false,
+    //     channel: 'msedge'
+    //   }
+    // },
 
-    {
-      name: 'GooglePixel5',
-      use: {
-        headless: false,
-        ...devices['Pixel 5']
-      }
-    }
+    // {
+    //   name: 'APIConfig',
+    //   testMatch: 'api.spec.ts',
+    //   use: {
+    //     baseURL: 'https://simple-books-api.glitch.me'
+    //   }
+    // },
 
     // {
     //   name: 'Firefox',

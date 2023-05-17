@@ -14,17 +14,32 @@
         ]
     },
     "rules": {
+        // requires 2 space for indentation
+        "indent": [
+            "error",
+            2
+        ],
+        // string should use only single quotes
+        "quotes": [
+            "error",
+            "single"
+        ],
+        // don't need to semi colon at end of each statement as it is not needed for typescript
+        "semi": [
+            "error",
+            "never"
+        ],
+        // line space given for each block
+        "block-spacing": [
+            "error",
+            "always"
+        ],
+        // To ignore the errors when promise not returned
         "@typescript-eslint/no-misused-promises": [
             "error",
             {
                 "checksVoidReturn": false,
                 "checksConditionals": false
-            }
-        ],
-        "@typescript-eslint/restrict-template-expressions": [
-            "error",
-            {
-                "templates": "off"
             }
         ]
     }

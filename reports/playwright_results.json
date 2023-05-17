@@ -1,0 +1,1629 @@
+{
+  "config": {
+    "configFile": "D:\\Automation_POC\\Playwright_Sample_Tests\\playwright.config.ts",
+    "rootDir": "D:/Automation_POC/Playwright_Sample_Tests/tests/parallel_tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "./reports/html-reports",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./reports/playwright_results.json",
+          "stripANSIControlSequences": true
+        }
+      ],
+      [
+        "D:\\Automation_POC\\Playwright_Sample_Tests\\node_modules\\allure-playwright\\dist\\index.js",
+        {
+          "detail": true,
+          "outputFolder": "./allure-results",
+          "suiteTitle": false
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Automation_POC/Playwright_Sample_Tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Smoke Tests",
+        "name": "Smoke Tests",
+        "testDir": "D:/Automation_POC/Playwright_Sample_Tests/tests/parallel_tests",
+        "testIgnore": [],
+        "testMatch": [
+          "webtests.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.33.0",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "webtests.spec.ts",
+      "file": "webtests.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Bupa health care tests",
+          "file": "webtests.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "'[Desktop Chrome]' - Verify Bupa search engine working",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 47518,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running the test in Desktop Chrome\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "got page title from accept cookies button\n"
+                        },
+                        {
+                          "text": "captured site title as Premium International Private health Insurance | Bupa.com\n"
+                        },
+                        {
+                          "text": "search button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'search button' selector\n"
+                        },
+                        {
+                          "text": "search text box is displayed\n"
+                        },
+                        {
+                          "text": "entered text on 'search text box' selector\n"
+                        },
+                        {
+                          "text": "run search is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'run search' selector\n"
+                        },
+                        {
+                          "text": "'\n        There are 3878 results for Bupa in 18ms\n    ' are extracted from 'result summary'\n"
+                        },
+                        {
+                          "text": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'\n"
+                        },
+                        {
+                          "text": "result from the 1st link is captured as Board committees\n"
+                        },
+                        {
+                          "text": "switched to window with title as Board committees | Bupa.com\n"
+                        },
+                        {
+                          "text": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1\n"
+                        },
+                        {
+                          "text": "Relevant article is displayed ''\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in Desktop Chrome",
+                          "duration": 12
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 298
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 8
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from accept cookies button",
+                          "duration": 1
+                        },
+                        {
+                          "title": "search button is enabled",
+                          "duration": 11
+                        },
+                        {
+                          "title": "clicked on the 'search button' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "search text box is displayed",
+                          "duration": 18
+                        },
+                        {
+                          "title": "entered text on 'search text box' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "run search is enabled",
+                          "duration": 5
+                        },
+                        {
+                          "title": "clicked on the 'run search' selector",
+                          "duration": 2
+                        },
+                        {
+                          "title": "'\n        There are 3878 results for Bupa in 18ms\n    ' are extracted from 'result summary'",
+                          "duration": 8
+                        },
+                        {
+                          "title": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'",
+                          "duration": 3
+                        },
+                        {
+                          "title": "switched to window with title as Board committees | Bupa.com",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1",
+                          "duration": 2
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:53:49.236Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-7bd94eccf7fae6d840ef",
+              "file": "webtests.spec.ts",
+              "line": 18,
+              "column": 13
+            },
+            {
+              "title": "'[Galaxy S8]' - Verify Bupa search engine working",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 51872,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running the test in Galaxy S8\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "got page title from accept cookies button\n"
+                        },
+                        {
+                          "text": "captured site title as Premium International Private health Insurance | Bupa.com\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "mobile search box is displayed\n"
+                        },
+                        {
+                          "text": "entered text on 'mobile search box' selector\n"
+                        },
+                        {
+                          "text": "mobile search button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile search button' selector\n"
+                        },
+                        {
+                          "text": "'\n        There are 3878 results for Bupa in 13ms\n    ' are extracted from 'result summary'\n"
+                        },
+                        {
+                          "text": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'\n"
+                        },
+                        {
+                          "text": "result from the 1st link is captured as Board committees\n"
+                        },
+                        {
+                          "text": "switched to window with title as Board committees | Bupa.com\n"
+                        },
+                        {
+                          "text": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1\n"
+                        },
+                        {
+                          "text": "Relevant article is displayed ''\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in Galaxy S8",
+                          "duration": 18
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 228
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from accept cookies button",
+                          "duration": 2
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 6
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 8
+                        },
+                        {
+                          "title": "mobile search box is displayed",
+                          "duration": 6
+                        },
+                        {
+                          "title": "entered text on 'mobile search box' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "mobile search button is enabled",
+                          "duration": 5
+                        },
+                        {
+                          "title": "clicked on the 'mobile search button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "'\n        There are 3878 results for Bupa in 13ms\n    ' are extracted from 'result summary'",
+                          "duration": 10
+                        },
+                        {
+                          "title": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'",
+                          "duration": 4
+                        },
+                        {
+                          "title": "switched to window with title as Board committees | Bupa.com",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:53:49.208Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-5666c8f26b0cee6ef56b",
+              "file": "webtests.spec.ts",
+              "line": 18,
+              "column": 13
+            },
+            {
+              "title": "'[iPhone 12 Mini landscape]' - Verify Bupa search engine working",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 65672,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running the test in iPhone 12 Mini landscape\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "got page title from accept cookies button\n"
+                        },
+                        {
+                          "text": "captured site title as Premium International Private health Insurance | Bupa.com\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is false\n"
+                        },
+                        {
+                          "text": "page reloaded to load elements\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "mobile search box is displayed\n"
+                        },
+                        {
+                          "text": "entered text on 'mobile search box' selector\n"
+                        },
+                        {
+                          "text": "mobile search button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile search button' selector\n"
+                        },
+                        {
+                          "text": "'\n        There are 3878 results for Bupa in 15ms\n    ' are extracted from 'result summary'\n"
+                        },
+                        {
+                          "text": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'\n"
+                        },
+                        {
+                          "text": "result from the 1st link is captured as Board committees\n"
+                        },
+                        {
+                          "text": "switched to window with title as Board committees | Bupa.com\n"
+                        },
+                        {
+                          "text": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1\n"
+                        },
+                        {
+                          "text": "Relevant article is displayed ''\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in iPhone 12 Mini landscape",
+                          "duration": 10
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 355
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 11
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from accept cookies button",
+                          "duration": 1
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 11
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 7
+                        },
+                        {
+                          "title": "element status returned is false",
+                          "duration": 5
+                        },
+                        {
+                          "title": "page reloaded to load elements",
+                          "duration": 5
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 4
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 6
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 10
+                        },
+                        {
+                          "title": "mobile search box is displayed",
+                          "duration": 8
+                        },
+                        {
+                          "title": "entered text on 'mobile search box' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "mobile search button is enabled",
+                          "duration": 7
+                        },
+                        {
+                          "title": "clicked on the 'mobile search button' selector",
+                          "duration": 3
+                        },
+                        {
+                          "title": "'\n        There are 3878 results for Bupa in 15ms\n    ' are extracted from 'result summary'",
+                          "duration": 7
+                        },
+                        {
+                          "title": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'",
+                          "duration": 4
+                        },
+                        {
+                          "title": "switched to window with title as Board committees | Bupa.com",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1",
+                          "duration": 2
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:53:51.568Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-5e00e37a4a8cc56939b9",
+              "file": "webtests.spec.ts",
+              "line": 18,
+              "column": 13
+            },
+            {
+              "title": "[Desktop Chrome] - Verify search navigating using window handles",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 40418,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m\n    at D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts:39:51",
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mselectSubLink(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39mchildLink\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             \u001b[36mconst\u001b[39m actualPageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mreturnPageTitle()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m             expect(actualPageTitle\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'Leader | Bupa.com'\u001b[39m\u001b[33m.\u001b[39mtoLowerCase())\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39msearchContent(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mverifySearchResult(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey)\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mnavigateToFirstLink()\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts",
+                            "column": 51,
+                            "line": 39
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m\n\n\u001b[0m \u001b[90m 37 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mselectSubLink(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39mchildLink\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             \u001b[36mconst\u001b[39m actualPageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mreturnPageTitle()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m             expect(actualPageTitle\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'Leader | Bupa.com'\u001b[39m\u001b[33m.\u001b[39mtoLowerCase())\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39msearchContent(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mverifySearchResult(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey)\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mnavigateToFirstLink()\u001b[0m\n\n\u001b[2m    at D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts:39:51\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running the test in Desktop Chrome\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "Bupa primary link is enabled\n"
+                        },
+                        {
+                          "text": "Mouse hovered on the 'Bupa primary link' selector\n"
+                        },
+                        {
+                          "text": "Leadership is selected using bupa sub links\n"
+                        },
+                        {
+                          "text": "got page title from bupa sub links\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in Desktop Chrome",
+                          "duration": 4
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 7
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 9
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Bupa primary link is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "Mouse hovered on the 'Bupa primary link' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Leadership is selected using bupa sub links",
+                          "duration": 4
+                        },
+                        {
+                          "title": "got page title from bupa sub links",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:54:41.635Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation_POC\\Playwright_Sample_Tests\\test-results\\webtests-Bupa-health-care-tests-Desktop-Chrome---Verify-search-navigating-using-window-handles-Smoke-Tests\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts",
+                        "column": 51,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-038d8ce968cb44bca021",
+              "file": "webtests.spec.ts",
+              "line": 32,
+              "column": 13
+            },
+            {
+              "title": "[Galaxy S8] - Verify search navigating using window handles",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 40585,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m\n    at D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts:39:51",
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mselectSubLink(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39mchildLink\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             \u001b[36mconst\u001b[39m actualPageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mreturnPageTitle()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m             expect(actualPageTitle\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'Leader | Bupa.com'\u001b[39m\u001b[33m.\u001b[39mtoLowerCase())\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39msearchContent(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mverifySearchResult(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey)\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mnavigateToFirstLink()\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts",
+                            "column": 51,
+                            "line": 39
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m\n\n\u001b[0m \u001b[90m 37 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mselectSubLink(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39mchildLink\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             \u001b[36mconst\u001b[39m actualPageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mreturnPageTitle()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m             expect(actualPageTitle\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'Leader | Bupa.com'\u001b[39m\u001b[33m.\u001b[39mtoLowerCase())\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39msearchContent(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mverifySearchResult(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey)\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mnavigateToFirstLink()\u001b[0m\n\n\u001b[2m    at D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts:39:51\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running the test in Galaxy S8\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is false\n"
+                        },
+                        {
+                          "text": "page reloaded to load elements\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "Bupa primary link is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'Bupa primary link' selector\n"
+                        },
+                        {
+                          "text": "Leadership is selected using bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "got page title from bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in Galaxy S8",
+                          "duration": 4
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 17
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "element status returned is false",
+                          "duration": 4
+                        },
+                        {
+                          "title": "page reloaded to load elements",
+                          "duration": 7
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 7
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 3
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 5
+                        },
+                        {
+                          "title": "Bupa primary link is enabled",
+                          "duration": 5
+                        },
+                        {
+                          "title": "clicked on the 'Bupa primary link' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Leadership is selected using bupa sub links in mobile",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from bupa sub links in mobile",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:54:43.717Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation_POC\\Playwright_Sample_Tests\\test-results\\webtests-Bupa-health-care-tests-Galaxy-S8---Verify-search-navigating-using-window-handles-Smoke-Tests\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts",
+                        "column": 51,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-d8ee6480b690afd79144",
+              "file": "webtests.spec.ts",
+              "line": 32,
+              "column": 13
+            },
+            {
+              "title": "[iPhone 12 Mini landscape] - Verify search navigating using window handles",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 35293,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m\n    at D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts:39:51",
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mselectSubLink(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39mchildLink\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             \u001b[36mconst\u001b[39m actualPageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mreturnPageTitle()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m             expect(actualPageTitle\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'Leader | Bupa.com'\u001b[39m\u001b[33m.\u001b[39mtoLowerCase())\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39msearchContent(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mverifySearchResult(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey)\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mnavigateToFirstLink()\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts",
+                            "column": 51,
+                            "line": 39
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"leader | bupa.com\"\u001b[39m\nReceived string:    \u001b[31m\"leadership | bupa.com\"\u001b[39m\n\n\u001b[0m \u001b[90m 37 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mselectSubLink(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39mchildLink\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m             \u001b[36mconst\u001b[39m actualPageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mreturnPageTitle()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m             expect(actualPageTitle\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'Leader | Bupa.com'\u001b[39m\u001b[33m.\u001b[39mtoLowerCase())\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39msearchContent(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey\u001b[33m,\u001b[39m isMobile)\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mverifySearchResult(\u001b[33mBupaSiteConstants\u001b[39m\u001b[33m.\u001b[39msearchKey)\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m             \u001b[36mawait\u001b[39m bupa\u001b[33m.\u001b[39mnavigateToFirstLink()\u001b[0m\n\n\u001b[2m    at D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts:39:51\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running the test in iPhone 12 Mini landscape\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "Bupa primary link is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'Bupa primary link' selector\n"
+                        },
+                        {
+                          "text": "Leadership is selected using bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "got page title from bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in iPhone 12 Mini landscape",
+                          "duration": 15
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 20
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 7
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 8
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 7
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 4
+                        },
+                        {
+                          "title": "Bupa primary link is enabled",
+                          "duration": 8
+                        },
+                        {
+                          "title": "clicked on the 'Bupa primary link' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Leadership is selected using bupa sub links in mobile",
+                          "duration": 2
+                        },
+                        {
+                          "title": "got page title from bupa sub links in mobile",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:54:57.308Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation_POC\\Playwright_Sample_Tests\\test-results\\webtests-Bupa-health-care-tests-iPhone-12-Mini-71d7b---Verify-search-navigating-using-window-handles-Smoke-Tests\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Automation_POC\\Playwright_Sample_Tests\\tests\\parallel_tests\\webtests.spec.ts",
+                        "column": 51,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-6f0095f0512ef0d2a60e",
+              "file": "webtests.spec.ts",
+              "line": 32,
+              "column": 13
+            },
+            {
+              "title": "[Desktop Chrome] - Verify primary links of Bupa site",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 54037,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running the test in Desktop Chrome\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "Bupa primary link is enabled\n"
+                        },
+                        {
+                          "text": "Mouse hovered on the 'Bupa primary link' selector\n"
+                        },
+                        {
+                          "text": "Our strategy is selected using bupa sub links\n"
+                        },
+                        {
+                          "text": "got page title from bupa sub links\n"
+                        },
+                        {
+                          "text": "got page title from service links\n"
+                        },
+                        {
+                          "text": "search button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'search button' selector\n"
+                        },
+                        {
+                          "text": "search text box is displayed\n"
+                        },
+                        {
+                          "text": "entered text on 'search text box' selector\n"
+                        },
+                        {
+                          "text": "run search is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'run search' selector\n"
+                        },
+                        {
+                          "text": "'\n        There are 3878 results for Bupa in 13ms\n    ' are extracted from 'result summary'\n"
+                        },
+                        {
+                          "text": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'\n"
+                        },
+                        {
+                          "text": "result from the 1st link is captured as Board committees\n"
+                        },
+                        {
+                          "text": "switched to window with title as Board committees | Bupa.com\n"
+                        },
+                        {
+                          "text": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1\n"
+                        },
+                        {
+                          "text": "Relevant article is displayed ''\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in Desktop Chrome",
+                          "duration": 15
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 153
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 9
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Bupa primary link is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "Mouse hovered on the 'Bupa primary link' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Our strategy is selected using bupa sub links",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from bupa sub links",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from service links",
+                          "duration": 1
+                        },
+                        {
+                          "title": "search button is enabled",
+                          "duration": 5
+                        },
+                        {
+                          "title": "clicked on the 'search button' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "search text box is displayed",
+                          "duration": 5
+                        },
+                        {
+                          "title": "entered text on 'search text box' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "run search is enabled",
+                          "duration": 4
+                        },
+                        {
+                          "title": "clicked on the 'run search' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "'\n        There are 3878 results for Bupa in 13ms\n    ' are extracted from 'result summary'",
+                          "duration": 8
+                        },
+                        {
+                          "title": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'",
+                          "duration": 8
+                        },
+                        {
+                          "title": "switched to window with title as Board committees | Bupa.com",
+                          "duration": 2
+                        },
+                        {
+                          "title": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:57:02.904Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-d10c19e104ac2f2d5641",
+              "file": "webtests.spec.ts",
+              "line": 48,
+              "column": 13
+            },
+            {
+              "title": "[Galaxy S8] - Verify primary links of Bupa site",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 71680,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running the test in Galaxy S8\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is false\n"
+                        },
+                        {
+                          "text": "page reloaded to load elements\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "Bupa primary link is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'Bupa primary link' selector\n"
+                        },
+                        {
+                          "text": "Our strategy is selected using bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "got page title from bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "got page title from service links in mobile\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "mobile search box is displayed\n"
+                        },
+                        {
+                          "text": "entered text on 'mobile search box' selector\n"
+                        },
+                        {
+                          "text": "mobile search button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile search button' selector\n"
+                        },
+                        {
+                          "text": "'\n        There are 3878 results for Bupa in 13ms\n    ' are extracted from 'result summary'\n"
+                        },
+                        {
+                          "text": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'\n"
+                        },
+                        {
+                          "text": "result from the 1st link is captured as Board committees\n"
+                        },
+                        {
+                          "text": "switched to window with title as Board committees | Bupa.com\n"
+                        },
+                        {
+                          "text": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1\n"
+                        },
+                        {
+                          "text": "Relevant article is displayed ''\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in Galaxy S8",
+                          "duration": 10
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 132
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 12
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 9
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 7
+                        },
+                        {
+                          "title": "element status returned is false",
+                          "duration": 10
+                        },
+                        {
+                          "title": "page reloaded to load elements",
+                          "duration": 5
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 7
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 6
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 6
+                        },
+                        {
+                          "title": "Bupa primary link is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "clicked on the 'Bupa primary link' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Our strategy is selected using bupa sub links in mobile",
+                          "duration": 2
+                        },
+                        {
+                          "title": "got page title from bupa sub links in mobile",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from service links in mobile",
+                          "duration": 2
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 6
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 4
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 10
+                        },
+                        {
+                          "title": "mobile search box is displayed",
+                          "duration": 6
+                        },
+                        {
+                          "title": "entered text on 'mobile search box' selector",
+                          "duration": 7
+                        },
+                        {
+                          "title": "mobile search button is enabled",
+                          "duration": 4
+                        },
+                        {
+                          "title": "clicked on the 'mobile search button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "'\n        There are 3878 results for Bupa in 13ms\n    ' are extracted from 'result summary'",
+                          "duration": 7
+                        },
+                        {
+                          "title": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'",
+                          "duration": 3
+                        },
+                        {
+                          "title": "switched to window with title as Board committees | Bupa.com",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:56:57.020Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-34af9243549a1a9de69d",
+              "file": "webtests.spec.ts",
+              "line": 48,
+              "column": 13
+            },
+            {
+              "title": "[iPhone 12 Mini landscape] - Verify primary links of Bupa site",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Smoke Tests",
+                  "projectName": "Smoke Tests",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 66057,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running the test in iPhone 12 Mini landscape\n"
+                        },
+                        {
+                          "text": "Navigated to https://www.bupa.com/\n"
+                        },
+                        {
+                          "text": "accept cookies button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'accept cookies button' selector\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "Bupa primary link is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'Bupa primary link' selector\n"
+                        },
+                        {
+                          "text": "Our strategy is selected using bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "got page title from bupa sub links in mobile\n"
+                        },
+                        {
+                          "text": "got page title from service links in mobile\n"
+                        },
+                        {
+                          "text": "mobile menu bar is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile menu bar' selector\n"
+                        },
+                        {
+                          "text": "element status returned is true\n"
+                        },
+                        {
+                          "text": "mobile search box is displayed\n"
+                        },
+                        {
+                          "text": "entered text on 'mobile search box' selector\n"
+                        },
+                        {
+                          "text": "mobile search button is enabled\n"
+                        },
+                        {
+                          "text": "clicked on the 'mobile search button' selector\n"
+                        },
+                        {
+                          "text": "'\n        There are 3878 results for Bupa in 15ms\n    ' are extracted from 'result summary'\n"
+                        },
+                        {
+                          "text": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'\n"
+                        },
+                        {
+                          "text": "result from the 1st link is captured as Board committees\n"
+                        },
+                        {
+                          "text": "switched to window with title as Board committees | Bupa.com\n"
+                        },
+                        {
+                          "text": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1\n"
+                        },
+                        {
+                          "text": "Relevant article is displayed ''\n"
+                        },
+                        {
+                          "text": "page closed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Running the test in iPhone 12 Mini landscape",
+                          "duration": 10
+                        },
+                        {
+                          "title": "Navigated to https://www.bupa.com/",
+                          "duration": 204
+                        },
+                        {
+                          "title": "accept cookies button is enabled",
+                          "duration": 7
+                        },
+                        {
+                          "title": "clicked on the 'accept cookies button' selector",
+                          "duration": 2
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 11
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 23
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 5
+                        },
+                        {
+                          "title": "Bupa primary link is enabled",
+                          "duration": 4
+                        },
+                        {
+                          "title": "clicked on the 'Bupa primary link' selector",
+                          "duration": 2
+                        },
+                        {
+                          "title": "Our strategy is selected using bupa sub links in mobile",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from bupa sub links in mobile",
+                          "duration": 1
+                        },
+                        {
+                          "title": "got page title from service links in mobile",
+                          "duration": 5
+                        },
+                        {
+                          "title": "mobile menu bar is enabled",
+                          "duration": 8
+                        },
+                        {
+                          "title": "clicked on the 'mobile menu bar' selector",
+                          "duration": 5
+                        },
+                        {
+                          "title": "element status returned is true",
+                          "duration": 5
+                        },
+                        {
+                          "title": "mobile search box is displayed",
+                          "duration": 6
+                        },
+                        {
+                          "title": "entered text on 'mobile search box' selector",
+                          "duration": 7
+                        },
+                        {
+                          "title": "mobile search button is enabled",
+                          "duration": 5
+                        },
+                        {
+                          "title": "clicked on the 'mobile search button' selector",
+                          "duration": 1
+                        },
+                        {
+                          "title": "'\n        There are 3878 results for Bupa in 15ms\n    ' are extracted from 'result summary'",
+                          "duration": 9
+                        },
+                        {
+                          "title": "'Bupa's borrowings,Board committees,201511 Global Internal Audit Charter - FINAL,Financial dates,Bupa expands Healthy Cities programme globally to support people's health through nature restoration in cities,Bupa UK launches ground-breaking mental health proposition for businesses,Role of Non-Executive Directors,Role of Chairman and CEO,Leadership,Five tips to put wellness at work first,eco-Disruptive challenge,News,News,Financials,What we do' are extracted from 'result links'",
+                          "duration": 3
+                        },
+                        {
+                          "title": "switched to window with title as Board committees | Bupa.com",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Obtained text  from the link header#css=div[class=banner-landing-page-title] > h1",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2023-05-17T13:57:00.055Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38f222df3a92aa74fd89-2086e2e207b73c936661",
+              "file": "webtests.spec.ts",
+              "line": 48,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
